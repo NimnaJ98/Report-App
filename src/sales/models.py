@@ -13,7 +13,7 @@ from .utils import generate_code
 # Create your models here.
 
     #price is products*quantity
-    #sales calss can have many positions
+    #sales class can have many positions
 class Position(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
                         #whenever the product is deleted all the positions to the product will be deleted
